@@ -1,5 +1,6 @@
 import discord 
 from discord.ext import commands 
+import os 
 
 intents = discord.Intents.all()
 bot = commands.Bot("$", intents=intents)
@@ -20,7 +21,7 @@ async def on_ready():
 
 @bot.command() 
 async def projeto(ctx:command.context):
-  await ctx.sed ("aqui é o projeto escrito em py, objetivo dele e praticamente aprender a mexer com chats bots logica de programação com python,tão quanto aprender a mexer com inteligencia artificial."):
+  await ctx.send ("aqui é o projeto escrito em py, objetivo dele e praticamente aprender a mexer com chats bots logica de programação com python,tão quanto aprender a mexer com inteligencia artificial."):
 
 bot.run(AQUI VAI O SEU TOKEN.)
 
